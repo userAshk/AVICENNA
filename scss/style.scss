@@ -1,12 +1,30 @@
-@import "hero";
+@import "banner";
+@import "header";
+@import "cake";
+@import "media";
+@import "cake-content";
+
+
+@import "footer";
+
+$green: #00B34A;
 
 *{
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    font-family: sans-serif;
+}
+html{
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
 }
 button{
     outline: none;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
 }

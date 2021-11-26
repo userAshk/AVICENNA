@@ -1,0 +1,32 @@
+#hidden{
+    display: none;
+}
+.diagnostic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba rgba(51,51,51,0.90);
+
+    .cakeItem{
+        width: 180px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    img{
+        width: 180px;
+        border-radius: 14px;
+        // opacity: .5;
+    }
+    .itemCaption{
+        position: absolute;
+        color: #000;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+}
