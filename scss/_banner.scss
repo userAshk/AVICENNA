@@ -45,7 +45,14 @@
     .numbers{
         margin-bottom: 50px;
         .num{
-            padding: 10px;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            color: #fff;
+            font-weight: 900;
+            img{
+                height: 20px;
+            }
         }
         hr{
             background-color: #fff;
