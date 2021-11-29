@@ -1,0 +1,31 @@
+.diagcard{
+    display: none;
+}
+
+.diagcardShow{
+    display: block;
+    position: relative;
+    transition: 4s;
+    min-height: 100px;   
+    min-width: 120px;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 42x;
+    }
+    .card_layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 42px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .serv_description{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+    }
+}

@@ -270,6 +270,72 @@ header {
   padding-top: 40px;
 }
 
+.diagcard {
+  display: none;
+}
+
+.diagcardShow {
+  display: block;
+  position: relative;
+  -webkit-transition: 4s;
+  transition: 4s;
+  min-height: 100px;
+  min-width: 120px;
+}
+
+.diagcardShow img {
+  width: 100%;
+  height: 100%;
+  border-radius: 42x;
+}
+
+.diagcardShow .card_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 42px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.diagcardShow .serv_description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.nerse__card {
+  display: none;
+}
+
+.nerse__cardShow {
+  display: block;
+  position: relative;
+  -webkit-transition: all 4s;
+  transition: all 4s;
+  min-height: 100px;
+  min-width: 120px;
+}
+
+.nerse__cardShow img {
+  border-radius: 28px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nerse__cardShow .card_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 footer {
   display: block;
   background-color: #656565;
