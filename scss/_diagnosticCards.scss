@@ -1,7 +1,14 @@
 .diagcard{
     display: none;
 }
+.diag__name{
+    display: block;
+    width: 100%;
+    height: 20%;
 
+    background-color: #ff0;
+    position: absolute;
+}
 .diagcardShow{
     display: block;
     position: relative;
