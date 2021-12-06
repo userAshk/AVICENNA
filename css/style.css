@@ -295,36 +295,30 @@ header {
   display: none;
 }
 
-.diag__name {
-  display: block;
-  width: 100%;
-  height: 20%;
-  background-color: #ff0;
-  position: absolute;
-}
-
 .diagcardShow {
   display: block;
   position: relative;
-  -webkit-transition: 4s;
-  transition: 4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 100%;
   min-height: 100px;
   min-width: 120px;
+  margin: 10px;
+  border: 4px solid transparent;
 }
 
 .diagcardShow img {
   width: 100%;
   height: 100%;
-  border-radius: 42x;
 }
 
 .diagcardShow .card_layer {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 42px;
+  border-radius: 46px;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -333,6 +327,25 @@ header {
   bottom: 20px;
   left: 20px;
   color: #fff;
+}
+
+.diagcardShow:hover {
+  border: 4px solid #00B34A;
+  border-radius: 48px;
+}
+
+.diag__name_hidden {
+  display: none;
+}
+
+.diag__name {
+  display: block;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 2px;
+  border-bottom: 4px solid #00B34A;
 }
 
 .nerse__card {
@@ -365,6 +378,95 @@ header {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.card-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 500px;
+}
+
+.card-carousel .my-card {
+  height: 320px;
+  width: 192px;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-carousel .my-card img {
+  width: 500px;
+  height: 500px;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev,
+.card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-carousel .my-card .n_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  background-color: #00A54F;
+  color: #fff;
+  width: 500px;
+}
+
+.card-carousel .my-card .n_info img {
+  padding: 0;
+  width: 100px;
+  height: auto;
+  padding-right: 10px;
+}
+
 footer {
   display: block;
   background-color: #656565;
@@ -379,14 +481,26 @@ footer a {
   color: #fff;
   font-weight: 600;
   display: inline-block;
-  padding: 5px 0;
+  padding-bottom: 10px;
+}
+
+footer h4 {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .footer-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -401,9 +515,22 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footer-content .social_network a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-content .social_network a img {
+  width: 32px;
+  height: 32px;
+  padding-right: 10px;
 }
 
 * {

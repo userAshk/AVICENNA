@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/cake.scss"
+        "jquery.carousel.scss"
     ],
     "names": [],
-    "file": "cake.css"
+    "file": "jquery.carousel.css"
 }

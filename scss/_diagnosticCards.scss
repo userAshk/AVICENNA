@@ -1,32 +1,30 @@
+$green: #00B34A;
+
 .diagcard{
     display: none;
 }
-.diag__name{
-    display: block;
-    width: 100%;
-    height: 20%;
 
-    background-color: #ff0;
-    position: absolute;
-}
 .diagcardShow{
     display: block;
     position: relative;
-    transition: 4s;
+    transition: 0.2s;
+    width: 100%;
+
     min-height: 100px;   
     min-width: 120px;
+    margin: 10px;
+    border: 4px solid transparent;
     img{
         width: 100%;
         height: 100%;
-        border-radius: 42x;
     }
     .card_layer{
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 42px;
+        border-radius: 46px;
         background: rgba(0, 0, 0, 0.4);
     }
     .serv_description{
@@ -35,4 +33,24 @@
         left: 20px;
         color: #fff;
     }
+    
 }
+.diagcardShow:hover{
+    border: 4px solid $green;
+    border-radius: 48px;
+}
+
+.diag__name_hidden{
+    display: none;
+}
+.diag__name{
+    display: block;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 2px;
+    border-bottom: 4px solid $green;
+}
+
+
