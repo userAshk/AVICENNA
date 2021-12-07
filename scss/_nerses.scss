@@ -1,72 +1,234 @@
-.card-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+$time: 500ms;
+$delay: $time/2;
+$mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.nerses_h {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 4px solid #00A54F;
+}
+.slider-container {
     position: relative;
-    height: 500px;
+    margin: 0 auto;
+    width: 800px;
+    height: 700px;
 }
 
-.card-carousel .my-card {
-    height: 320px;
-    width: 192px;
+.slider-content {
     position: relative;
-    z-index: 1;
-    -webkit-transform: scale(0.6) translateY(-2rem);
-    transform: scale(0.6) translateY(-2rem);
-    opacity: 0;
-    cursor: pointer;
-    pointer-events: none;
-    transition: 1s;
+    left: 50%;
+    top: 40%;
+    width: 70%;
+    height: 60%;
+    transform: translate(-50%, -50%);
 
-    img {
-        width: 500px;
-        height: 500px;
+    .slider-single {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: z-index 0ms $delay;
+
+        .slider-single-image {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 500px;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+            transition: $time $mode;
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        .slider-single-download {
+            position: absolute;
+            display: block;
+            right: -22px;
+            bottom: 12px;
+            padding: 15px;
+            color: #333333;
+            background-color: #fdc84b;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "karla";
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: $time $mode;
+            opacity: 0;
+
+            &:hover,
+            &:focus {
+                outline: none;
+                text-decoration: none;
+            }
+        }
+
+        .slider-single-likes {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            transition: $time $mode;
+            opacity: 0;
+            background-color: #00A54F;
+
+            img {
+                width: 100px;
+                height: 100px;
+
+            }
+
+            p {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0;
+                color: #ffffff;
+                padding-bottom: 5px;
+            }
+            p:first-of-type{
+                font-weight: 900;
+            }
+
+            &:hover,
+            &:focus {
+                outline: none;
+                text-decoration: none;
+            }
+        }
+
+        &.preactivede {
+
+            //z-index: 0;
+            .slider-single-image {
+                //opacity: 0;
+                transform: translateX(-50%) scale(0);
+            }
+        }
+
+        &.preactive {
+            z-index: 1;
+
+            .slider-single-image {
+                opacity: 0.3;
+                transform: translateX(-25%) scale(0.8);
+            }
+
+            .slider-single-download {
+                transform: translateX(-150px);
+            }
+
+            .slider-single-title {
+                transform: translateX(-150px);
+            }
+
+            .slider-single-likes {
+                transform: translateX(-150px);
+            }
+        }
+
+        &.proactive {
+            z-index: 1;
+
+            .slider-single-image {
+                opacity: 0.3;
+                transform: translateX(25%) scale(0.8);
+            }
+
+            .slider-single-download {
+                transform: translateX(150px);
+            }
+
+            .slider-single-title {
+                transform: translateX(150px);
+            }
+
+            .slider-single-likes {
+                transform: translateX(150px);
+            }
+        }
+
+        &.proactivede {
+
+            //z-index: 0;
+            .slider-single-image {
+                //opacity: 0;
+                transform: translateX(50%) scale(0);
+            }
+        }
+
+        &.active {
+            z-index: 2;
+
+            .slider-single-image {
+                opacity: 1;
+                transform: translateX(0%) scale(1);
+            }
+
+            .slider-single-download {
+                opacity: 1;
+                transition-delay: 100ms;
+                transform: translateX(0px);
+            }
+
+            .slider-single-title {
+                opacity: 1;
+                transition-delay: 200ms;
+                transform: translateX(0px);
+            }
+
+            .slider-single-likes {
+                opacity: 1;
+                transition-delay: 300ms;
+                transform: translateX(0px);
+            }
+        }
     }
 }
 
-.card-carousel .my-card:after {
-    content: '';
+.slider-left {
     position: absolute;
-    height: 2px;
-    width: 100%;
-    border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    bottom: -5rem;
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-}
-
-.card-carousel .my-card.active {
     z-index: 3;
-    -webkit-transform: scale(1) translateY(0) translateX(0);
-    transform: scale(1) translateY(0) translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-    transition: 1s;
+    display: block;
+    right: 85%;
+    top: 60%;
+    transform: translateY(-50%);
+    padding: 50px;
 }
 
-.card-carousel .my-card.prev,
-.card-carousel .my-card.next {
-    z-index: 2;
-    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
-    transform: scale(0.8) translateY(-1rem) translateX(0);
-    opacity: 0.6;
-    pointer-events: auto;
-    transition: 1s;
+.slider-right {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    left: 85%;
+    top: 60%;
+    transform: translateY(-50%);
+    padding: 50px;
 }
 
-.card-carousel .my-card .n_info {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: auto;
-    background-color: #00A54F;
-    color: #fff;
-    width: 500px;
-    img {
-        padding: 0;
-        width: 100px;
-        height: auto;
-        padding-right: 10px;
-    }
+
+.not-visible {
+    display: none !important;
 }
