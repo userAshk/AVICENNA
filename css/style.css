@@ -1,5 +1,6 @@
 .banner {
   height: 100%;
+  min-height: 450px;
   background-image: url(../img/hero-img.webp);
   background-size: cover;
   position: relative;
@@ -29,6 +30,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+  min-height: 450px;
 }
 
 .banner-up {
@@ -73,8 +75,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding-top: 40px;
-  margin: 100px 0;
+  padding-top: 20px;
+  margin: 50px 0;
 }
 
 .banner-main .numbers {
@@ -205,10 +207,13 @@ header {
   display: block;
   text-align: center;
   margin-top: 20px;
-  font-size: 12px;
-  font-family: "GothamPro";
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.cake .cake_item .cake_caption .invisible {
+  color: #fff;
 }
 
 .cake .cake_item:hover {
@@ -699,6 +704,58 @@ header {
           box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
 }
 
+.part_none {
+  display: none;
+}
+
+.partners {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.partners h2 {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #00B34A;
+}
+
+.partners .part_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.partners .part_wrapper .part_item {
+  padding: 50px;
+  font-size: 24px;
+  margin: 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners .part_wrapper .part_item img {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  width: 100%;
+}
+
+.partners .part_wrapper .part_item a {
+  width: 100%;
+}
+
 footer {
   display: block;
   background-color: #656565;
@@ -749,6 +806,10 @@ footer p {
           flex-direction: column;
 }
 
+.footer-content .social_network {
+  margin-left: 20px;
+}
+
 .footer-content .social_network a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,8 +821,8 @@ footer p {
 }
 
 .footer-content .social_network a img {
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 28px;
   padding-right: 10px;
 }
 

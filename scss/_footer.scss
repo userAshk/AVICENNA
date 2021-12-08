@@ -34,13 +34,14 @@ footer{
         flex-direction: column;
     }
     .social_network{
+        margin-left: 20px;
         a{
             display: flex;
             justify-self: center;
             align-items: center;
             img{
-                width: 32px;
-                height: 32px;
+                width: 50px;
+                height: 28px;
                 padding-right: 10px;
             }
         }

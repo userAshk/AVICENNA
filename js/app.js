@@ -16,5 +16,9 @@ $(document).ready(function(){
     $('#offers').click(function(e){
         $('.offer_none ').toggleClass('spec_offers')
     })
+
+    $('#partners').click(function(e){
+        $('.part_none').toggleClass('partners')
+    })
 });
 

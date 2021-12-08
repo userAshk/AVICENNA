@@ -21,10 +21,12 @@
             display: block;
             text-align: center;
             margin-top: 20px;
-            font-size: 12px;
-            font-family: "GothamPro";
+            font-size: 16px;
             font-weight: bold;
             text-transform: uppercase;
+            .invisible{
+                color: #fff;
+            }
         }
     }
     .cake_item:hover{
