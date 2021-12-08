@@ -756,6 +756,52 @@ header {
   width: 100%;
 }
 
+.cont_none {
+  display: none;
+}
+
+.contacts {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.contacts h2 {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #00B34A;
+}
+
+.contacts .cont_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contacts .cont_wrapper .cont_item {
+  padding: 50px;
+  font-size: 24px;
+  margin: 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
+}
+
+.contacts .cont_wrapper .cont_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts .cont_wrapper .cont_item a img {
+  width: 40px;
+  padding-right: 10px;
+}
+
 footer {
   display: block;
   background-color: #656565;

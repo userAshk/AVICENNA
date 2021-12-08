@@ -20,5 +20,10 @@ $(document).ready(function(){
     $('#partners').click(function(e){
         $('.part_none').toggleClass('partners')
     })
+    
+    $('#contacts').click(function(e){
+        $('.cont_none').toggleClass('contacts')
+    })
 });
 
+contacts
