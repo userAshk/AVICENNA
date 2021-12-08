@@ -25,5 +25,3 @@ $(document).ready(function(){
         $('.cont_none').toggleClass('contacts')
     })
 });
-
-contacts
