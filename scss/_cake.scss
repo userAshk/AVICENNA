@@ -30,6 +30,7 @@
     .cake_item:hover{
         background-color: #00B43E;
         color: #fff;
+        cursor: pointer;
         transition: 0.2s;
         img{
             filter: brightness(0) invert(1);
