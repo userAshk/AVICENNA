@@ -14,10 +14,11 @@ $green: #00B34A;
     min-width: 120px;
     margin: 10px;
     border: 4px solid transparent;
+    border-radius: 42px;
+
     img{
         width: 100%;
         height: 100%;
-        border-radius: 42px;
     }
     .card_layer{
         position: absolute;
@@ -25,9 +26,8 @@ $green: #00B34A;
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 40px;
+        border-radius: 42px;
         background: rgba(0, 0, 0, 0.5);
-        // border: 1px solid black;
     }
     .serv_description{
         position: absolute;

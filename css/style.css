@@ -207,7 +207,7 @@ header {
   display: block;
   text-align: center;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -285,12 +285,12 @@ header {
   min-width: 120px;
   margin: 10px;
   border: 4px solid transparent;
+  border-radius: 42px;
 }
 
 .diagcardShow img {
   width: 100%;
   height: 100%;
-  border-radius: 42px;
 }
 
 .diagcardShow .card_layer {
@@ -299,7 +299,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 40px;
+  border-radius: 42px;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -746,15 +746,6 @@ header {
 .contacts .cont_wrapper .cont_item a img {
   width: 40px;
   padding-right: 10px;
-}
-
-@media only screen and (min-width: 375px) {
-  .banner-up #banner-name {
-    display: none;
-  }
-  .banner-main .numbers {
-    display: none;
-  }
 }
 
 @media only screen and (min-width: 425px) {
