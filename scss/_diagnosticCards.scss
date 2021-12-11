@@ -31,12 +31,13 @@ $green: #00B34A;
     }
     .serv_description{
         position: absolute;
-        bottom: 50px;
-        left: 20px;
+        bottom: 45%;
         color: #fff;
         font-size: 20px;
         text-transform: uppercase;
-        font-weight: bold;         
+        font-weight: bold;  
+        text-align: center;
+        width: 100%;
     }    
 }
 .diagcardShow:hover{

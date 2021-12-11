@@ -305,12 +305,13 @@ header {
 
 .diagcardShow .serv_description {
   position: absolute;
-  bottom: 50px;
-  left: 20px;
+  bottom: 45%;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+  width: 100%;
 }
 
 .diagcardShow:hover {
@@ -356,7 +357,7 @@ header {
 
 .slider-content {
   position: relative;
-  left: 50%;
+  left: 60%;
   top: 40%;
   width: 70%;
   height: 70%;
@@ -379,7 +380,7 @@ header {
   position: relative;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 70%;
   height: 500px;
   -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
@@ -429,6 +430,7 @@ header {
   transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
   opacity: 0;
   background-color: #00A54F;
+  width: 70%;
 }
 
 .slider-content .slider-single .slider-single-likes img {
@@ -555,7 +557,7 @@ header {
   position: absolute;
   z-index: 3;
   display: block;
-  right: 85%;
+  right: 71%;
   top: 60%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -570,7 +572,7 @@ header {
   position: absolute;
   z-index: 3;
   display: block;
-  left: 85%;
+  left: 70%;
   top: 60%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -617,6 +619,13 @@ header {
           box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
 }
 
+.cons_wrapper .consulting p:hover {
+  background-color: #00B34A;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #fff;
+}
+
 .offer_none {
   display: none;
 }
@@ -648,6 +657,13 @@ header {
   border-radius: 8px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 14px 30px, rgba(0, 0, 0, 0.22) 0px 8px 18px;
+}
+
+.spec_offers .offer_wrapper .offer_item:hover {
+  background-color: #00B34A;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .part_none {
@@ -693,13 +709,13 @@ header {
 }
 
 .partners .part_wrapper .part_item img {
-  -webkit-filter: brightness(0);
-          filter: brightness(0);
   width: 100%;
 }
 
-.partners .part_wrapper .part_item a {
-  width: 100%;
+.partners .part_wrapper .part_item:hover {
+  background-color: #00B34A;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .cont_none {
@@ -748,6 +764,13 @@ header {
   padding-right: 10px;
 }
 
+.contacts .cont_wrapper .cont_item:hover {
+  background-color: #00B34A;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #fff;
+}
+
 @media only screen and (min-width: 425px) {
   .contacts .cont_wrapper {
     display: -ms-grid;
@@ -758,8 +781,8 @@ header {
   .partners .part_wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -858,10 +881,11 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2px;
 }
 
 .footer-content .social_network a img {
-  width: 50px;
+  width: 40px;
   height: 28px;
   padding-right: 10px;
 }
@@ -882,6 +906,7 @@ html, body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 button {

@@ -2,6 +2,13 @@ $time: 500ms;
 $delay: $time/2;
 $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 
+.nerse__card{
+    display: none;
+}
+.nerse__cardShow{
+    display: block;
+}
+
 .nerses_h {
     text-align: center;
     padding: 10px 0;
@@ -16,7 +23,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
 
 .slider-content {
     position: relative;
-    left: 50%;
+    left: 60%;
     top: 40%;
     width: 70%;
     height: 70%;
@@ -35,7 +42,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
             position: relative;
             left: 0;
             top: 0;
-            width: 100%;
+            width: 70%;
             height: 500px;
             box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
             transition: $time $mode;
@@ -74,7 +81,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
             transition: $time $mode;
             opacity: 0;
             background-color: #00A54F;
-
+            width: 70%;
             img {
                 width: 100px;
                 height: 100px;
@@ -196,7 +203,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
     position: absolute;
     z-index: 3;
     display: block;
-    right: 85%;
+    right: 71%;
     top: 60%;
     transform: translateY(-50%);
     padding: 50px;
@@ -210,7 +217,7 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43);
     position: absolute;
     z-index: 3;
     display: block;
-    left: 85%;
+    left: 70%;
     top: 60%;
     transform: translateY(-50%);
     padding: 50px;

@@ -41,7 +41,7 @@ $(document).ready(function(){
     })
     
     $('#contacts').click(function(e){
-        if($('.part_none').toggleClass('partners'))
+        if($('.part_none').removeClass('partners'))
         if($('.offer_none ').removeClass('spec_offers'))
 
         $('.cont_none').toggleClass('contacts')

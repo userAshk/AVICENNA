@@ -3,7 +3,6 @@
 @import "cake";
 @import "cake-content";
 @import "diagnosticCards";
-@import "nerseCard";
 @import "nerses";
 @import "consult";
 @import "offers";
@@ -28,6 +27,7 @@ html, body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 button{
     outline: none;

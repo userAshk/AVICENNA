@@ -33,5 +33,10 @@
                 }
             }
         }
+        .cont_item:hover{
+            background-color: $green;
+            transition: .2s;
+            color: #fff;
+        }
     }
 }
