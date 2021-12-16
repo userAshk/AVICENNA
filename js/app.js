@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $("#diagnostic").click(function(e) {
         if($('.nerse__card').removeClass('nerse__cardShow'))
@@ -47,3 +46,22 @@ $(document).ready(function(){
         $('.cont_none').toggleClass('contacts')
     })
 });
+
+var timer;
+var left = 0;
+
+function autoSlider(){
+    timer = setTimeout(() =>{
+        let bannerFlex = document.querySelector('#banner-flex');
+
+        left = left - 100;
+    
+        if(left == -300){
+            left = 0;
+            clearTimeout(timer)
+        }
+        bannerFlex.style.left = left + '%';
+        autoSlider();
+    }, 2000);
+}
+autoSlider();

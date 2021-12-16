@@ -1,6 +1,17 @@
 @media only screen and (min-width: 375px) {
-    
+    .numbers{
+        display: none;
+    }
+    #banner-name{
+        display: none;
+    }
 
+    .bunner-text{
+        .caption{
+            margin-left: 10px;
+        }
+    }
+    
 }
 @media only screen and (min-width: 425px) {
     .contacts{
@@ -14,6 +25,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         } 
+    }
+    .numbers{
+        display: none;
+    }
+    .bunner-text{
+        .caption{
+            margin-left: 20px;
+        }
     }
 }
 
@@ -32,12 +51,35 @@
             justify-content: center;
         }
     }
+    .cons_wrapper{
+        .consulting{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .numbers{
+        display: block;
+    }
+    #banner-name{
+        display: block;
+    }
+
 }
+
+
+
 @media only screen and (min-width: 1024px) {
-    .cake{
+    .cake {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
         gap: 20px;
     }
-  }
+
+    .numbers{
+        display: block;
+    }
+    #banner-name{
+        display: block;
+    }
+}
