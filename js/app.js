@@ -1,52 +1,4 @@
-$(document).ready(function(){
-    $("#diagnostic").click(function(e) {
-        if($('.nerse__card').removeClass('nerse__cardShow'))
-        if($('.cons_none').removeClass('cons_wrapper'))
-
-        $('.diagcard').toggleClass('diagcardShow');
-        $('.diag__name_hidden').toggleClass('diag__name');
-    });
-
-    $('#nerseCard').click(function(e){
-        if($('.diagcard').removeClass('diagcardShow'))
-        if($('.diag__name_hidden').removeClass('diag__name'))
-
-        if($('.cons_none').removeClass('cons_wrapper'))
-
-        $('.nerse__card').toggleClass('nerse__cardShow')
-    })
-
-    $('#consult').click(function(e){
-        if($('.nerse__card').removeClass('nerse__cardShow'))
-        if($('.diagcard').removeClass('diagcardShow'))
-        if($('.diag__name_hidden').removeClass('diag__name'))
-        
-        $('.cons_none').toggleClass('cons_wrapper');
-    })
-
-
-    $('#offers').click(function(e){
-        if($('.part_none').removeClass('partners'))
-        if($('.cont_none').removeClass('contacts'))
-
-        $('.offer_none ').toggleClass('spec_offers')
-    })
-
-    $('#partners').click(function(e){
-        if($('.cont_none').removeClass('contacts'))
-        if($('.offer_none ').removeClass('spec_offers'))
-
-        $('.part_none').toggleClass('partners')
-    })
-    
-    $('#contacts').click(function(e){
-        if($('.part_none').removeClass('partners'))
-        if($('.offer_none ').removeClass('spec_offers'))
-
-        $('.cont_none').toggleClass('contacts')
-    })
-});
-
+// BANNER SLIDER
 var slideIndex = 0;
 showSlides();
 function showSlides() {
@@ -60,5 +12,85 @@ function showSlides() {
         slideIndex = 1
     }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2000); 
+    setTimeout(showSlides, 3000); 
 }
+
+
+
+$(document).ready(function(){
+
+    //show diagnostic cards
+    $("#diagnostic").click(function(e) {
+        $('.diagcard').toggleClass('diagcardShow');
+        $('.diag__name_hidden').toggleClass('diag__name');
+
+        if($('.nerse__card').removeClass('nerse__cardShow'));
+        if($('.cons_none').removeClass('cons_wrapper'));
+        if($('.part_none').removeClass('partners'));
+        if($('.cont_none').removeClass('contacts'));
+        if($('.offer_none ').removeClass('spec_offers'));
+
+    });
+
+    $('#nerseCard').click(function(e){
+        $('.nerse__card').toggleClass('nerse__cardShow');
+
+        if($('.diagcard').removeClass('diagcardShow'))
+        if($('.diag__name_hidden').removeClass('diag__name'))
+        if($('.cons_none').removeClass('cons_wrapper'));
+        if($('.part_none').removeClass('partners'));
+        if($('.cont_none').removeClass('contacts'));
+        if($('.offer_none ').removeClass('spec_offers'));
+
+    })
+
+    $('#consult').click(function(e){
+        // CONSULTING
+        $('.cons_none').toggleClass('cons_wrapper');
+
+        if($('.diagcard').removeClass('diagcardShow'))
+        if($('.diag__name_hidden').removeClass('diag__name'))
+        if($('.part_none').removeClass('partners'));
+        if($('.cont_none').removeClass('contacts'));
+        if($('.offer_none ').removeClass('spec_offers'));
+        if($('.nerse__card').removeClass('nerse__cardShow'));
+    })
+
+
+    $('#offers').click(function(e){
+        $('.offer_none ').toggleClass('spec_offers')
+
+        if($('.diagcard').removeClass('diagcardShow'))
+        if($('.diag__name_hidden').removeClass('diag__name'))
+        if($('.part_none').removeClass('partners'));
+        if($('.cont_none').removeClass('contacts'));
+        if($('.cons_none').removeClass('cons_wrapper'));
+        if($('.nerse__card').removeClass('nerse__cardShow'));
+
+    })
+
+    $('#partners').click(function(e){
+        $('.part_none').toggleClass('partners');
+
+        if($('.diagcard').removeClass('diagcardShow'));
+        if($('.diag__name_hidden').removeClass('diag__name'))
+        if($('.cont_none').removeClass('contacts'));
+        if($('.cons_none').removeClass('cons_wrapper'));
+        if($('.offer_none ').removeClass('spec_offers'));
+        if($('.nerse__card').removeClass('nerse__cardShow'));
+
+    })
+    
+    $('#contacts').click(function(e){
+        $('.cont_none').toggleClass('contacts');
+
+        
+        if($('.diagcard').removeClass('diagcardShow'));
+        if($('.diag__name_hidden').removeClass('diag__name'))
+        if($('.cons_none').removeClass('cons_wrapper'));
+        if($('.offer_none ').removeClass('spec_offers'));
+        if($('.part_none').removeClass('partners'));
+        if($('.nerse__card').removeClass('nerse__cardShow'));
+    })
+});
+

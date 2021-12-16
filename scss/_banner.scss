@@ -2,34 +2,6 @@
     position: relative;
 }
 
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
 .mySlides {
     display: none;
 }
@@ -41,7 +13,6 @@
     background-image: url(../img/hero-img.webp);
     background-size: cover;
     background-position: center;
-    transition: 1s;
 }
 .banner2{
     width: 100%;
@@ -50,7 +21,6 @@
     background-image: url(../img/banner2.jpg);
     background-size: cover;
     background-position: center;
-    transition: 1s;
 }
 .banner3{
     width: 100%;
@@ -59,7 +29,6 @@
     background-image: url(../img/banner3.jpg);
     background-size: cover;
     background-position: center;
-    transition: 1s;
 }
 
 .layer {

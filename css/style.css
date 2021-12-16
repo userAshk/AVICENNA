@@ -2,32 +2,6 @@
   position: relative;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .mySlides {
   display: none;
 }
@@ -39,8 +13,6 @@
   background-image: url(../img/hero-img.webp);
   background-size: cover;
   background-position: center;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .banner2 {
@@ -50,8 +22,6 @@
   background-image: url(../img/banner2.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .banner3 {
@@ -61,8 +31,6 @@
   background-image: url(../img/banner3.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .layer {
@@ -811,6 +779,24 @@ header {
   color: #fff;
 }
 
+@media only screen and (min-width: 320px) {
+  .numbers {
+    display: none;
+  }
+  #banner-name {
+    display: none;
+  }
+  .bunner-text .caption {
+    margin-left: 10px;
+  }
+  .contacts .cont_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (min-width: 375px) {
   .numbers {
     display: none;
@@ -820,6 +806,12 @@ header {
   }
   .bunner-text .caption {
     margin-left: 10px;
+  }
+  .contacts .cont_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
