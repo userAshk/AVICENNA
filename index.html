@@ -7,6 +7,8 @@
     <title>Avicenna</title>
 
     <link rel="stylesheet" href="css/fonts/GothamPro-Light.woff">
+    <link rel="stylesheet" href="css/lightslider.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -307,391 +309,521 @@
 <!-- END DIAGNOSTIC CARDS -->
                
 <!-- CAROUSEL -->
-            <div class="nerse__card slider-container animate__animated animate__slideInRight">
+
+            <div class="nerse__cardShow slider-container animate__animated animate__slideInRight">
                 <h2 class="nerses_h animate__animated animate__slideInRight">ВРАЧИ</h2>
+                    <!-- SLIDER -->
+                    <ul id="lightSlider">
 
-                <div class="slider-content ">
-                    
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-000.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>МАДЯРОВА ЫРЫС МЫСЫРОВНА </p>
-                                <p>ФУНКЦИОНАЛЬНЫЙ ДИАГНОСТ</p>
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-000.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <div>
+                                            <p>МАДЯРОВА ЫРЫС МЫСЫРОВНА </p>
+                                            <p>ФУНКЦИОНАЛЬНЫЙ ДИАГНОСТ</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-001.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ПАЗЫЛОВА АИДА СУЛТАНОВНА </p>
-                                <p>ВРАЧ НЕВРОЛОГ, ФИЗИОТЕРАПЕВТ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-001.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ПАЗЫЛОВА АИДА СУЛТАНОВНА </p>
+                                        <p>ВРАЧ НЕВРОЛОГ, ФИЗИОТЕРАПЕВТ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-002.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ЭРАЛИЕВ БЕЙШЕН АШИМОВИЧ </p>
-                                <p>Д.М.К., ПРОФЕССОР, ХИРУРГ ВЫСШЕЙ КАТЕГОРИИ,
-                                    ВРАЧ-ПРОКТОЛОГ</p>
+                        </li>  
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-002.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ЭРАЛИЕВ БЕЙШЕН АШИМОВИЧ </p>
+                                        <p>Д.М.К., ПРОФЕССОР, ХИРУРГ ВЫСШЕЙ КАТЕГОРИИ,
+                                            ВРАЧ-ПРОКТОЛОГ</p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-003.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ДИЛДЕБАЕВА ЭЛЬНУРА НУРАЛИЕВНА </p>
-                                <p>ЭНДОКРИНОЛОГ, ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-003.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ДИЛДЕБАЕВА ЭЛЬНУРА НУРАЛИЕВНА </p>
+                                        <p>ЭНДОКРИНОЛОГ, ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-004.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ДОЛОТОВА ТОКТОБУБУ ЖОЛОМАНОВНА </p>
-                                <p>ВРАЧ-ПУЛЬМОНОЛОГ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-004.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ДОЛОТОВА ТОКТОБУБУ ЖОЛОМАНОВНА </p>
+                                        <p>ВРАЧ-ПУЛЬМОНОЛОГ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-005.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>БОЛДЖУРОВА ЖАННАТ БАКАЧИЕВНА </p>
-                                <br>
-                                <p>АКУШЕР-ГИНЕКОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-005.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>БОЛДЖУРОВА ЖАННАТ БАКАЧИЕВНА </p>
+                                         
+                                        <p>АКУШЕР-ГИНЕКОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-006.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ОРДОБАЕВА ГУЛЬДЖАМАЛ АБДЫЛДАЕВНА </p>
-                                <br>
-                                <p>КАРДИОЛОГ</p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-006.jpg" class="img-small" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ОРДОБАЕВА ГУЛЬДЖАМАЛ АБДЫЛДАЕВНА </p>
+                                         
+                                        <p>КАРДИОЛОГ</p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-007.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ТОКТОХОДЖАЕВА ГУЛЬБАРА МАНАПОВНА </p>
-                                <br>
-                                <p>КОСМЕТОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-007.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ТОКТОХОДЖАЕВА ГУЛЬБАРА МАНАПОВНА </p>
+                                         
+                                        <p>КОСМЕТОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-008.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>АРГЫНОВА АЙНУРА ОСМОНАЛИЕВНА </p>
-                                <p>ГИНЕКОЛОГ, ВРАЧ УЗИ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-008.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>АРГЫНОВА АЙНУРА ОСМОНАЛИЕВНА </p>
+                                        <p>ГИНЕКОЛОГ, ВРАЧ УЗИ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-009.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>АБДЫШЕВ АСКАРБЕК ШАРШЕНБЕКОВИЧ </p>
-                                <p>ОНКОЛОГ, МАММОЛОГ, ОНКОДЕРМАТОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-009.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>АБДЫШЕВ АСКАРБЕК ШАРШЕНБЕКОВИЧ </p>
+                                        <p>ОНКОЛОГ, МАММОЛОГ, ОНКОДЕРМАТОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-010.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>РОМАНОВА ТАТЬЯНА АНАТОЛЬЕВНА </p>
-                                <p>КАРДИОЛОГ ВЫСШЕЙ КАТЕГОРИИ</p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-010.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        
+                                        <p>РОМАНОВА ТАТЬЯНА АНАТОЛЬЕВНА </p>
+                                        <p>КАРДИОЛОГ ВЫСШЕЙ КАТЕГОРИИ</p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-011.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>МУРАТОВ ТИЛЕК КАСЫМОВИЧ </p>
-                                <br>
-                                <p>УРОЛОГ</p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-011.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>МУРАТОВ ТИЛЕК КАСЫМОВИЧ </p>
+                                        <p>УРОЛОГ</p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-012.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>МАМЕТАЗИМ УУЛУ МАМЕТНАЗАР </p>
-                                <br>
-                                <p>ТЕРАПЕВТ, ПУЛЬМОНОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-012.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>МАМЕТАЗИМ УУЛУ МАМЕТНАЗАР </p>
+                                         
+                                        <p>ТЕРАПЕВТ, ПУЛЬМОНОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-013.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>МУРАТОВА ЧОЛПОН АБДЫКЕРИМОВНА </p>
-                                <br>
-                                <p>ЭНДОКРИНОЛОГ</p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-013.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                      
+                                        <p>МУРАТОВА ЧОЛПОН АБДЫКЕРИМОВНА </p>
+                                         
+                                        <p>ЭНДОКРИНОЛОГ</p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-014.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>БЕЙШЕБАЕВА ГУЛНУРА БЕЙШЕБАЕВНА </p>
-                                <br>
-                                <p>АКУШЕР-ГИНЕКОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-014.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>БЕЙШЕБАЕВА ГУЛНУРА БЕЙШЕБАЕВНА </p>
+                                                 
+                                                <p>АКУШЕР-ГИНЕКОЛОГ
+                                                </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-015.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>КАРАБОТАЕВА РАХАТ БОЛОТОВНА </p>
-                                <br>
-                                <p>ВРАЧ-УЗИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-015.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>КАРАБОТАЕВА РАХАТ БОЛОТОВНА </p>
+                                         
+                                        <p>ВРАЧ-УЗИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-016.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>СЫДЫКОВА АЙНУРА СУРАНБАЕВНА </p>
-                                <br>
-                                <p>ВРАЧ УЗИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-016.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>СЫДЫКОВА АЙНУРА СУРАНБАЕВНА </p>
+                                                 
+                                                <p>ВРАЧ УЗИ
+                                                </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-017.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>АЗИМБАЕВА ХАЛИДА КОЖОНАЗАРОВНА </p>
-                                <br>
-                                <p>ВРАЧ- ИНФЕКЦИОНИСТ, ГЕПАТОЛОГ, ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-017.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>АЗИМБАЕВА ХАЛИДА КОЖОНАЗАРОВНА </p>
+                                         
+                                        <p>ВРАЧ- ИНФЕКЦИОНИСТ, ГЕПАТОЛОГ, ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-018.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ДЖУРАЕВА АЙМИРА АСАНОВНА </p>
-                                <br>
-                                <p>ДЕТСКИЙ НЕВРОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-018.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ДЖУРАЕВА АЙМИРА АСАНОВНА </p>
+                                         
+                                        <p>ДЕТСКИЙ НЕВРОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-019.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>МАМЕШЕВ ДАВРАН ЭРНСТОВИЧ </p>
-                                <br>
-                                <p>КАРДИОЛОГ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-019.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>МАМЕШЕВ ДАВРАН ЭРНСТОВИЧ </p>
+                                         
+                                        <p>КАРДИОЛОГ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-020.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>УСУБАЛИЕВ КУТМАНАЛЫ НАЗАРАЛЫЕВИЧ </p>
-                                <br>
-                                <p>ТРАВМАТОЛОГ-ОРТОПЕД
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-020.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>УСУБАЛИЕВ КУТМАНАЛЫ НАЗАРАЛЫЕВИЧ </p>
+                                                 
+                                                <p>ТРАВМАТОЛОГ-ОРТОПЕД
+                                                </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-021.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>АБДЫКЕРИМОВ ЧЫНГЫЗ ДЖАНЫБЕКОВИЧ </p>
-                                <br>
-                                <p>ВРАЧ-РЕНТГЕНОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-021.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                       
+                                        <p>АБДЫКЕРИМОВ ЧЫНГЫЗ ДЖАНЫБЕКОВИЧ </p>
+                                         
+                                        <p>ВРАЧ-РЕНТГЕНОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-022.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>КУРМАНАЛИЕВА БАКЫТ НУРКЕРИМОВНА </p>
-                                <br>
-                                <p>ДЕРМАТОВЕНЕРОЛОГ, ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-022.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>КУРМАНАЛИЕВА БАКЫТ НУРКЕРИМОВНА </p>
+                                         
+                                        <p>ДЕРМАТОВЕНЕРОЛОГ, ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-023.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ИМАРАЛИЕВА НУРИЛЯ АБДУХАЛИЛОВНА </p>
-                                <br>
-                                <p>ПЕДИАТР, ИММУНОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-023.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                      
+                                        <p>ИМАРАЛИЕВА НУРИЛЯ АБДУХАЛИЛОВНА </p>
+                                         
+                                        <p>ПЕДИАТР, ИММУНОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-024.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>АРСТАНБЕКОВА АИДА </p>
-                                <br>
-                                <p>ГИНЕКОЛОГ-ЭНДОКРИНОЛОГ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-024.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>АРСТАНБЕКОВА АИДА </p>
+                                         
+                                        <p>ГИНЕКОЛОГ-ЭНДОКРИНОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-025.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ДЖУМАГУЛОВА АЙНАГУЛЬ СЕКСЕНАЛИЕВНА </p>
-                                <br>
-                                <p>ДОКТОР МЕДИЦИНСКИХ НАУК, ПРОФЕССОР,
-                                    ЗАСЛУЖЕННЫЙ ДЕЯТЕЛЬ НАУКИ КР 
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-025.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ДЖУМАГУЛОВА АЙНАГУЛЬ СЕКСЕНАЛИЕВНА </p>
+                                         
+                                        <p>ДОКТОР МЕДИЦИНСКИХ НАУК, ПРОФЕССОР,
+                                            ЗАСЛУЖЕННЫЙ ДЕЯТЕЛЬ НАУКИ КР 
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-026.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ЖУНУСОВ ДАНИЯР ЖУНУСОВИЧ </p>
-                                <br>
-                                <p>ХИРУРГ</p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-026.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ЖУНУСОВ ДАНИЯР ЖУНУСОВИЧ </p>
+                                         
+                                        <p>ХИРУРГ</p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-027.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>ИМАНАКУНОВА ЖАМИЛЯ ШЕЙШЕКЕЕВНА </p>
-                                <br>
-                                <p>КАРДИОЛОГ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-027.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>ИМАНАКУНОВА ЖАМИЛЯ ШЕЙШЕКЕЕВНА </p>
+                                         
+                                        <p>КАРДИОЛОГ ВЫСШЕЙ КАТЕГОРИИ
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div> 
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-028.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p> МУКАМБЕТОВА ГУЛЬБАРЫН ТУРДУКЕЕВНА </p>
+                                                 
+                                                <p> ВРАЧ – ЭНДОСКОПИСТ ВЫСШЕЙ КАТЕГОРИИ
+                                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-029.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p> ТЕЛЬНОВ ДЕНИС КОНСТАНТИНОВИЧ </p>
+                                         
+                                        <p> ДЕРМАТОВЕНЕРОЛОГ, АЛЛЕРГОЛОГ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-030.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p> КАЙЫПОВ АЙБОЛОТ  </p>
+                                                
+                                                <p>ДЕРМАТОВЕНЕРОЛОГ
+                                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>    
+                        <li>
+                            <div class="slider-item">
+                                <a href="">
+                                    <img src="img/nerse/image-031.jpg" alt="">
+                                </a>
+                                <div class="desc">
+                                    <img src="img/nerse/mini_logo.jpg" alt="">
+                                    <div class="about-nerse">
+                                        <p>МАРИПОВА АЗИЗА АРАПБАЕВНА </p>
+                                        
+                                        <p>ОСТЕОПАТ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>    
+            
+                        
+                    </ul>
 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-028.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p> МУКАМБЕТОВА ГУЛЬБАРЫН ТУРДУКЕЕВНА </p>
-                                <br>
-                                <p> ВРАЧ – ЭНДОСКОПИСТ ВЫСШЕЙ КАТЕГОРИИ
-                                </p>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-029.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p> ТЕЛЬНОВ ДЕНИС КОНСТАНТИНОВИЧ </p>
-                                <br>
-                                <p> ДЕРМАТОВЕНЕРОЛОГ, АЛЛЕРГОЛОГ
-                                </p>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-030.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p> КАЙЫПОВ АЙБОЛОТ КАЙЫРБЕКОВИЧ </p>
-                                <br>
-                                <p>ДЕРМАТОВЕНЕРОЛОГ
-                                </p>
-                            </div>
-                        </a>
-                    </div> 
-                    <div class="slider-single">
-                        <img class="slider-single-image" src="img/nerse/image-031.jpg" alt="1" />
-                        <a class="slider-single-likes" href="javascript:void(0);">
-                            <img src="img/nerse/mini_logo.jpg" alt="">
-                            <div>
-                                <p>МАРИПОВА АЗИЗА АРАПБАЕВНА </p>
-                                <br>
-                                <p>ОСТЕОПАТ
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="slider-right">
-                    <img src="img/right.png" alt="">
-                </div>
-                <div class="slider-left">
-                    <img src="img/left.png" alt="">
-                </div>
+                
             </div>
 <!-- CAROUSEL END -->
 
@@ -812,7 +944,7 @@
 <!-- CONTACTS -->
 
         <!-- CONTAINER END -->
-        </div>
+     
     </section>
 
     <footer class="footer">
@@ -858,10 +990,11 @@
     </footer>
 
     
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
     integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-    crossorigin="anonymous">
-</script> <script src="js/carousel.js"></script>
+    crossorigin="anonymous"></script>
 <script src="js/app.js"></script>
+<script defer type="text/javascript" src="./js/lightslider.js"></script>
+<script defer type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

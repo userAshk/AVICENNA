@@ -17,6 +17,21 @@
             grid-template-columns: 1fr;
         }
     }
+    .partners{
+        .part_wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+        } 
+    }
+    .spec_offers{
+        .offer_wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+            .offer_item{
+                padding: 30px;
+            }
+        }
+    }
     
 }
 @media only screen and (min-width: 375px) {
@@ -38,7 +53,18 @@
             grid-template-columns: 1fr;
         }
     }
-    
+    .partners{
+        .part_wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+        } 
+    }
+    .spec_offers{
+        .offer_wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
 }
 @media only screen and (min-width: 425px) {
     .contacts{
@@ -50,7 +76,7 @@
     .partners{
         .part_wrapper{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         } 
     }
     .numbers{
@@ -61,6 +87,16 @@
             margin-left: 20px;
         }
     }
+    
+    .spec_offers{
+        .offer_wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    .slider-single{
+        
+   }
 }
 
 @media only screen and (min-width: 768px) {
@@ -84,11 +120,23 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+    .partners{
+        .part_wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        } 
+    }
     .numbers{
         display: block;
     }
     #banner-name{
         display: block;
+    }
+    .spec_offers{
+        .offer_wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
 }
