@@ -82,7 +82,7 @@
             pagerWidth = 0,
             slideWidth = 0,
             thumbWidth = 0,
-            interval = null,
+            interval = 20000000000000,
             isTouch = ('ontouchstart' in document.documentElement);
         var refresh = {};
 
