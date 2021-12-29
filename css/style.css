@@ -126,7 +126,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
+  height: 80px;
 }
 
 .header .logo {
@@ -160,12 +160,14 @@ header {
 }
 
 .header .settings div {
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
 }
 
 #search {
   padding: 10px;
   border-radius: 14px;
+  margin-right: 10px;
+  margin-bottom: 2px;
 }
 
 .banner-search {
@@ -175,6 +177,7 @@ header {
   text-indent: 20px;
   /* Extra Styling */
   padding: 10px;
+  width: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: none;
