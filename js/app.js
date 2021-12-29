@@ -1,5 +1,6 @@
 // BANNER SLIDER
 var slideIndex = 0;
+var sliderConnected = false;
 showSlides();
 function showSlides() {
     var i;
@@ -16,10 +17,6 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000); 
 }
-
-$( "#search" ).focus(function() {
-    
-});
 
 $(document).ready(function(){
 
@@ -46,6 +43,34 @@ $(document).ready(function(){
         if($('.cont_none').removeClass('contacts'));
         if($('.offer_none ').removeClass('spec_offers'));
 
+        if ( $('.nerse__card').hasClass('nerse__cardShow') && !sliderConnected) {
+            sliderConnected = true;
+            $('#lightSlider').lightSlider({
+                auto: true,
+                item: 3,
+                loop: true,
+                slideMove: 1,
+                speed: 400,
+                pauseOnHover: true,
+                responsive: [
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            item: 2,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            item: 1,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+        }
     })
 
     $('#consult').click(function(e){
@@ -96,33 +121,4 @@ $(document).ready(function(){
         if($('.part_none').removeClass('partners'));
         if($('.nerse__card').removeClass('nerse__cardShow'));
     })
-});
-
-
-$(document).ready(function () {
-    $('#lightSlider').lightSlider({
-        auto: true,
-        item: 3,
-        loop: true,
-        slideMove: 1,
-        speed: 400,
-        pauseOnHover: true,
-        responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    item: 2,
-                    slideMove: 1,
-                    slideMargin: 6,
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    item: 1,
-                    slideMove: 1
-                }
-            }
-        ]
-    });
 });

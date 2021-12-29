@@ -16,12 +16,6 @@
     margin-right: 0;
 }
 
-.active{
-    /* transform: scale(1.2);
-    z-index: 10;
-    transition: .5s; */
-}
-
 
 #lightSlider li img {
     width: 100%;
