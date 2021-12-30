@@ -122,3 +122,19 @@ $(document).ready(function(){
         if($('.nerse__card').removeClass('nerse__cardShow'));
     })
 });
+
+
+// $.fn.fitToWidth=function(){
+//     $(this).wrapInner("<h5 style='display:inline;font:inherit;white-space:inherit;'></h5>").each(function(){
+//         var $t=$(this);
+//         var a=$t.outerWidth(),
+//             $s=$t.children("h5"),
+//             f=parseFloat($t.css("font-size"));
+//         while($t.children("h5").outerWidth() > a) $t.css("font-size",--f);
+//         $t.html($s.html());
+//     });
+// }
+
+// $(function(){
+//     $("h5").fitToWidth();
+// });

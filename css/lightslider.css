@@ -35,13 +35,19 @@
 }
 
 #lightSlider li .slider-item .desc img{
-    width: 90px;
+    width: 100px;
     height: 80px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+#lightSlider li .slider-item .desc h5{
+    padding: 5px;
 }
 #lightSlider li .slider-item .desc div p{
+    display: inline-block;
+    width: 100%;
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 15px;
 }
 
 .lSSlideOuter {

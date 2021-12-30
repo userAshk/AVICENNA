@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .slideshow-container {
   position: relative;
 }
@@ -166,7 +167,8 @@ header {
 #search {
   padding: 10px;
   border-radius: 14px;
-  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid #000;
   margin-bottom: 2px;
 }
 
@@ -176,19 +178,25 @@ header {
   background-repeat: no-repeat;
   text-indent: 20px;
   /* Extra Styling */
-  padding: 10px;
-  width: 40px;
+  padding-right: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: none;
   border-radius: 14px;
 }
 
+input::after {
+  content: 'Поиск';
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+
 input:focus {
   background-image: none;
   text-indent: 0px;
   z-index: 10;
-  width: 100%;
+  width: 50%;
 }
 
 .cake {
