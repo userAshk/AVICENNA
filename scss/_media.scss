@@ -1,4 +1,13 @@
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px)and (max-width: 425px) {
+    .header{
+        .logo{
+            display: flex;
+            margin-left: 10px;
+        }
+        .settings{
+            display: none;
+        }
+    }
     .numbers{
         display: none;
     }
@@ -34,72 +43,87 @@
     }
     
 }
-@media only screen and (min-width: 375px) {
-    .numbers{
-        display: none;
-    }
-    #banner-name{
-        display: none;
-    }
+// @media only screen and (min-width: 375px) {
+//     .header{
+//         .settings{
+//             display: none;
+//         }
+//     }
+//     .numbers{
+//         display: none;
+//     }
+//     #banner-name{
+//         display: none;
+//     }
 
-    .bunner-text{
-        .caption{
-            margin-left: 10px;
-        }
-    }
-    .contacts{
-        .cont_wrapper{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
-    .partners{
-        .part_wrapper{
-            display: grid;
-            grid-template-columns: 1fr;
-        } 
-    }
-    .spec_offers{
-        .offer_wrapper{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
-}
-@media only screen and (min-width: 425px) {
-    .contacts{
-        .cont_wrapper{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
-    .partners{
-        .part_wrapper{
-            display: grid;
-            grid-template-columns: 1fr;
-        } 
-    }
-    .numbers{
-        display: none;
-    }
-    .bunner-text{
-        .caption{
-            margin-left: 20px;
-        }
-    }
+//     .bunner-text{
+//         .caption{
+//             margin-left: 10px;
+//         }
+//     }
+//     .contacts{
+//         .cont_wrapper{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//         }
+//     }
+//     .partners{
+//         .part_wrapper{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//         } 
+//     }
+//     .spec_offers{
+//         .offer_wrapper{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//         }
+//     }
+// }
+// @media only screen and (min-width: 425px) {
+//     .header{
+//         .settings{
+//             display: none;
+//         }
+//     }
+//     .contacts{
+//         .cont_wrapper{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//         }
+//     }
+//     .partners{
+//         .part_wrapper{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//         } 
+//     }
+//     .numbers{
+//         display: none;
+//     }
+//     .bunner-text{
+//         .caption{
+//             margin-left: 20px;
+//         }
+//     }
     
-    .spec_offers{
-        .offer_wrapper{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
-    .slider-single{
+//     .spec_offers{
+//         .offer_wrapper{
+//             display: grid;
+//             grid-template-columns: 1fr;
+//         }
+//     }
+//     .slider-single{
         
-   }
-}
+//    }
+// }
 
 @media only screen and (min-width: 768px) {
+    .header{
+        .settings{
+            display: flex;
+        }
+    }
     .cake{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -138,12 +162,23 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+    .contacts{
+        .cont_wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 
 }
 
 
 
 @media only screen and (min-width: 1024px) {
+    .header{
+        .settings{
+            display: none;
+        }
+    }
     .cake {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
