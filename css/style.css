@@ -140,7 +140,7 @@ header {
 }
 
 .header .logo .logo-img {
-  width: 200px;
+  width: 150px;
 }
 
 .header .logo .logo-img img {
@@ -166,6 +166,7 @@ header {
 
 #search {
   padding: 10px;
+  width: 50%;
   border-radius: 14px;
   margin-left: 10px;
   border: 1px solid #000;
@@ -565,15 +566,12 @@ input:focus {
   color: #fff;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) {
   .header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 10px;
-  }
-  .header .settings {
-    display: none;
   }
   .numbers {
     display: none;
@@ -607,12 +605,67 @@ input:focus {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .header .settings {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media only screen and (min-width: 375px) {
+  .numbers {
+    display: none;
   }
+  #banner-name {
+    display: none;
+  }
+  .bunner-text .caption {
+    margin-left: 10px;
+  }
+  .contacts .cont_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partners .part_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .spec_offers .offer_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .contacts .cont_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partners .part_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .numbers {
+    display: none;
+  }
+  .bunner-text .caption {
+    margin-left: 20px;
+  }
+  .spec_offers .offer_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .cake {
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .cake {
     display: -ms-grid;
     display: grid;
@@ -621,8 +674,7 @@ input:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 20px;
-    margin: 0 20px;
+    gap: 10px;
   }
   .footer .footer-content {
     display: -ms-grid;
@@ -666,9 +718,6 @@ input:focus {
 }
 
 @media only screen and (min-width: 1024px) {
-  .header .settings {
-    display: none;
-  }
   .cake {
     display: -ms-grid;
     display: grid;
